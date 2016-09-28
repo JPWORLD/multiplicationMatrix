@@ -16,7 +16,7 @@ public class MatrixMultiplication {
     public static void main(String[] args) {
         // TODO code application logic here
  
-        int i, j, k, columns, rows, p;
+        int i, j, k, columns, rows;
         Scanner s = new Scanner(System.in);
         System.out.print("Please enter the number of rows: ");
         rows = s.nextInt();
@@ -25,13 +25,13 @@ public class MatrixMultiplication {
         int a[][] = new int[rows][columns];    
         int b[][] = new int[rows][columns];    
         int c[][] = new int[rows][columns];    
-        System.out.println("Please Enter the first matrix");
+        System.out.println("Please Enter the first matrix number:");
         for (i = 0; i < rows; i++) {
             for (j = 0; j < columns; j++) {
                 a[i][j] = s.nextInt();
             }
         }
-        System.out.println("Please enter the second matrix");
+        System.out.println("Please enter the second matrix number");
         for (i = 0; i < rows; i++) {
             for (j = 0; j < columns; j++) {
                 b[i][j] = s.nextInt();
